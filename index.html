@@ -14,33 +14,37 @@
         <link href="css/styles.css" rel="stylesheet">        
     </head>
     <body>
-        <div class="fixed-footer">
-            <div class="container">
+            <div class="container text-center">
                 <header>
-                    <h1>Student Name</h1>
+                    <h1 class="top-heading">Student Name</h1>
                     <nav>
                         <ul>
+                            <li><a href="#home" >HOME</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
                         </ul>
                     </nav>    
                 </header>
                 <!-- Home - Row 1 -->
+                <main id="home" class="flex-container">
                     <div>
                         <p>Hi! I'm a front-end developer 
                         who loves responsive design and css. 
-                        I recently finished learning front-end web development 
+                        I recently finished a degree in front-end web development 
                         at Treehouse and am excited to put all my skills to use.</p>                
                     </div>
                     <div>
-                        <img src="Images/responsive-layout-profile.png" alt="Profile Picture" />                       
+                        <img src="img/responsive-layout-profile.png" alt="Profile Picture" />                       
                     </div>
                 </main>
                 <!-- Portfolio - Row 2 -->
+                <div id="portfolio">
                     <div>
                         <h1>PORTFOLIO</h1>
                     </div>
                     <div>
                         <figure>
-                            <img src="" alt="Project 1 - Marketing Page" />
+                            <img src="img/portfolio/portfolio-1.png" alt="Project 1 - Marketing Page" />
                             <figcaption>
                                 <h2>Marketing Page</h2>
                                 <p>This project shows the front page of a marketing website
@@ -50,7 +54,7 @@
                     </div>
                     <div>
                         <figure>
-                            <img src="" alt="Project 2 - Search Page" />
+                            <img src="img/portfolio/portfolio-2.png" alt="Project 2 - Search Page" />
                             <figcaption>
                                 <h2>Search Page</h2>
                                 <p>This project searches through a specific database
@@ -60,7 +64,7 @@
                     </div>
                     <div>
                         <figure>
-                            <img src="" alt="Project 3 - Travel App" />
+                            <img src="img/portfolio/portfolio-3.png" alt="Project 3 - Travel App" />
                             <figcaption>
                                 <h2>Travel App</h2>
                                 <p>This project compares travel times based on
@@ -71,7 +75,7 @@
                     </div>
                     <div>
                         <figure>
-                            <img src="" alt="Project 4 - Map of Favorite Spots" />
+                            <img src="img/portfolio/portfolio-4.png" alt="Project 4 - Map of Favorite Spots" />
                             <figcaption>
                                 <h2>Map of Favorite Spots</h2>
                                 <p>This project uses mapping apis to plot points
@@ -82,7 +86,7 @@
                     </div>
                     <div>
                         <figure>
-                            <img src="" alt="Project 5 - Photo Gallery" />
+                            <img src="img/portfolio/portfolio-5.png" alt="Project 5 - Photo Gallery" />
                             <figcaption>
                                 <h2>Photo Gallery</h2>
                                 <p>This project shows gallery pictures from a recent
@@ -93,7 +97,7 @@
                     </div>
                     <div>
                         <figure>
-                            <img src="" alt="Project 6 - Calculator"/>
+                            <img src="img/portfolio/portfolio-6.png" alt="Project 6 - Calculator"/>
                             <figcaption>
                                 <h2>Calculator</h2>
                                 <p>Someone can enter in the numbers they want, and
@@ -103,6 +107,7 @@
                     </div>                                                                                
                 </div>  
                 <!-- Contact - Row 3 -->
+                <div id="contact" class="row-3">
                     <div>
                         <h1>CONTACT</h1>
                     </div>
@@ -119,18 +124,15 @@
                     </div>                    
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <footer>
-                <h1>Student Name</h1>
-                <nav>
-                    <ul>
-                        <li>HOME</li>
-                        <li>PORTFOLIO</li>
-                        <li>CONTACT</li>
-                    </ul>
-                </nav>  
-            </footer>
-        </div>
+        <footer>
+            <div class="container">
+            <h1>Student Name</h1>
+            <nav class="mobile-nav">
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            </div>  
+        </footer>
     </body>
 </html>

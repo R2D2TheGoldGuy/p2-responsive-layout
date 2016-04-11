@@ -1,0 +1,67 @@
+/* Base Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.row-3 {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    background: #777;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Mobile First Approach */
+
+.page-top a::before {
+    content: attr(title);
+    display: inline-block;
+    
+}
+
+header {
+    background: floralwhite;
+}
+
+.fixed-footer {
+    min-height: calc(100vh - 37px);
+}
+
+footer {
+    background: crimson;
+}
+
+.mobile-nav {
+    display: none;
+        
+}
+
+.top-heading {
+    margin-top: 0;
+    background: lightblue;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
