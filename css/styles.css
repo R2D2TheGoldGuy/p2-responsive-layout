@@ -94,32 +94,20 @@ footer p a {
         width: 95%;
     } 
     
-    .main-header,
-    .main-nav {
+    .footer-header,
+    .footer-nav {
         display: flex;
         flex-direction: column;
-        text-align: center;
-    }
-    
-    .main-nav {
+    }    
+    .main-nav { /* Tablet Navigation */
         margin-top: 1.5em;
         flex-direction: row;
         justify-content: space-around;
         margin-top: 0;
     }
     
-    /* footer p {
-        display: none;
-    }
     
-    div span a {
-        float: right;
-            
-    }
     
-    footer::before {
-        content: "Student Name";
-    } */
     
     footer p {
         display: none;
@@ -127,8 +115,9 @@ footer p a {
 
     
     
-    .main-header {
+    .footer-header {
         flex-direction: row;
+        align-self: center;
     }
     .top-heading {
         margin-right: auto;
