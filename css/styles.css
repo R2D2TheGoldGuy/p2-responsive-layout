@@ -65,15 +65,25 @@ img {
 #contact {
     text-align: center;
 }
-
-
 header {
     background: floralwhite;
 }
 
-footer {
-    background: crimson;
+.generated-content {
+    display: none;
 }
+
+footer p::before {
+    content: "Student Name";
+}
+footer p a {
+    float: right;
+}
+
+.mobile-display {
+    display: none;
+}
+
 
 .top-heading {    
     background: lightblue;
@@ -83,11 +93,49 @@ footer {
     .container {
         width: 95%;
     } 
+    
+    .main-header,
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
     .main-nav {
         margin-top: 1.5em;
         flex-direction: row;
         justify-content: space-around;
+        margin-top: 0;
     }
+    
+    /* footer p {
+        display: none;
+    }
+    
+    div span a {
+        float: right;
+            
+    }
+    
+    footer::before {
+        content: "Student Name";
+    } */
+    
+    footer p {
+        display: none;
+    }
+
+    
+    
+    .main-header {
+        flex-direction: row;
+    }
+    .top-heading {
+        margin-right: auto;
+    }
+    
+    
+    
 
 }
 
