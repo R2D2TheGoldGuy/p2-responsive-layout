@@ -105,24 +105,20 @@ footer p a {
         justify-content: space-around;
         margin-top: 0;
     }
-    
-    
-    
-    
-    footer p {
-        display: none;
+    .bottom-heading { /* Centered Top Heading */
+        text-align: center;
+        margin-right: auto;
     }
 
-    
-    
+  
+  
     .footer-header {
         flex-direction: row;
         align-self: center;
+    }   
+    footer p {
+        display: none;
     }
-    .top-heading {
-        margin-right: auto;
-    }
-    
     
     
 
@@ -130,13 +126,17 @@ footer p a {
 
 @media (min-width: 1024px) {
     /* Desktop Nav - Using Flexbox */
-    .main-header {
+    .main-header,
+    .footer-header {
         flex-direction: row;
-    }
-    .top-heading {
-        margin-right: auto;
     }
     .main-nav {
         margin-top: 0;
+    }
+    .footer-nav {
+        margin-bottom: 0;
+    }
+    .top-heading { /* Desktop Top Heading */
+        margin-right: auto;
     }
 }
