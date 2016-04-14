@@ -5,12 +5,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
-
-.row-3 {
+.row-3,
+.row-4 {
     flex: 1;
 }
-
 h1 {
     font-size: 1.5em;
 }
@@ -19,109 +19,135 @@ a {
 }
 ul {
     list-style-type: none;
-    background: lightpink;
     margin: 0;
     padding: 0;
-}
 
+}
 img {
     max-width: 100%;
 }
-
+#portfolio,
+#skills,
+#contact {
+    text-align: center;
+}
 .container {
     width: 90%;
     margin: auto;
 }
 
-/* Mobile First Approach */
+/* ---- Mobile First Approach ---- */
 
+/* Mobile Nav */
+.top-heading {    
+    padding: 1em 0;
+}
 .main-header,
 .main-nav {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
 .main-nav { /* vertically centered top navigation */
     margin-bottom: auto;
+    font-weight: 700;
+    font-size: .875em;
 }
-.main-nav li {
+.main-nav li {   
     padding: 10px 0;
 }
 .main-nav a {
     display: block;
-    padding: .33em;
+    padding: .25em;
 }
 
-/* Use this if you had a logo on the left header. 
-.main-header h1 { 
-    align-self: center;
-} 
-*/
-
+/* Home Page */
 .flex-container-2 {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
-    margin: 2em auto;
-}
-.primary {
-    margin: 0 auto;
+    margin: 2.5em auto;
 }
 
-#portfolio,
-#contact {
-    text-align: center;
+/* Portfolio Page */
+.flex-container-3 {
+    margin: 70px auto 0;
 }
-header {
-    background: floralwhite;
-}
-
-.generated-content {
-    display: none;
+.margin-top {
+    margin-top: 40px;
 }
 
+/* Skills Page */
+.row-3 {
+     margin: 90px auto;
+}
+
+
+/* Contact Page */
+.row-4 {
+    margin-top: 20px;
+    margin-bottom: 160px;
+}
+
+
+
+/* Special Footer with Generated Content */
+.footer-background {
+    padding: 20px 0;
+    background: lightblue;
+}   
 footer p::before {
     content: "Student Name";
+    font-size: 1.25em;
+    font-weight: 700;
 }
 footer p a {
     float: right;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 4px;
 }
-
 .mobile-display {
     display: none;
 }
 
-.top-heading {    
-    margin: 0.5em 0 2em;
-}
+
 
 @media (min-width: 768px) {
     
+    ul {
+        font-size: .95em;
+    }
     .container {
         width: 95%;
     }
-    
     .footer-header,
     .footer-nav {
         display: flex;
         flex-direction: column;
     }    
     .main-nav { /* Tablet Navigation */
-        margin-top: 1.5em;
         flex-direction: row;
-        justify-content: space-around;
-        margin-top: 0;
+        justify-content: space-around;       
+        margin-top: auto;       
     }
+    .main-nav a {
+        padding: 0 .75em;
+        
+    }
+    
+    
+    
     .bottom-heading { /* Centered Top Heading */
         text-align: center;
         margin-right: auto;
     }
 
     .top-heading {    
-        margin: auto 0;
+        margin: auto 0;       
     }  
   
+ 
     .footer-header {
         flex-direction: row;
         align-self: center;
@@ -134,9 +160,6 @@ footer p a {
     .flex-container-2 {
         display: flex;
         flex-direction: row;
-    }
-    .primary {
-        text-align: left;
         font-size: 1.25em;
     }
     .secondary {
@@ -152,7 +175,6 @@ footer p a {
     }
     
     
-    
 
 }
 
@@ -162,9 +184,6 @@ footer p a {
     .main-header,
     .footer-header {
         flex-direction: row;
-    }
-    .main-nav {
-        margin-top: auto;
     }
     .top-heading { /* Desktop Top Heading */
         margin: auto auto auto 0;
