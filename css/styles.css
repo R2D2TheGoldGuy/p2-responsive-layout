@@ -17,6 +17,12 @@ h1 {
 a {
     text-decoration: none;
 }
+a:visited {
+    color: #3fb0ac;
+}
+a:hover {
+    color: #e05915;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -37,10 +43,30 @@ img {
 }
 
 /* ---- Mobile First Approach ---- */
+       
+/* Background Colors */
+.background-1 {
+    background: #173e43;
+}
+.background-2 {
+    background: #c2dde6;
+}
+.background-3 {
+    background: #f2efe8;
+}
+.background-4 {
+    background: #fa8;
+}
+.background-5 {
+    background: #e2da99;
+}
 
 /* Mobile Nav */
 .top-heading {    
     padding: 1em 0;
+}
+.bottom-heading {
+    color: #3fb0ac;
 }
 .main-header,
 .main-nav {
@@ -61,6 +87,7 @@ img {
     padding: .25em;
 }
 
+
 /* Home Page */
 .flex-container-2 {
     display: flex;
@@ -69,35 +96,43 @@ img {
     margin: 2.5em auto;
 }
 
+
 /* Portfolio Page */
 .flex-container-3 {
     margin: 70px auto 0;
 }
 .margin-top {
-    margin-top: 40px;
+    margin: 40px 0;
 }
+img {
+    transition: all 1s;
+}
+img:hover {
+    transform: scale(1) rotate(360deg);
+}
+
 
 /* Skills Page */
 .row-3 {
-     margin: 90px auto;
+     margin: 70px auto 0;
 }
+
 
 
 /* Contact Page */
 .row-4 {
-    margin-top: 20px;
-    margin-bottom: 160px;
+    margin: 120px auto;
 }
 
 
-
 /* Special Footer with Generated Content */
-.footer-background {
+.background-6 {
     padding: 20px 0;
-    background: lightblue;
+    background: #173e43;
 }   
 footer p::before {
     content: "Student Name";
+    color: #3fb0ac;
     font-size: 1.25em;
     font-weight: 700;
 }
@@ -132,8 +167,7 @@ footer p a {
         margin-top: auto;       
     }
     .main-nav a {
-        padding: 0 .75em;
-        
+        padding: 0 .75em;        
     }
     
     
@@ -151,7 +185,7 @@ footer p a {
     .footer-header {
         flex-direction: row;
         align-self: center;
-    }   
+    }       
     footer p {
         display: none;
     }
@@ -165,7 +199,6 @@ footer p a {
     .secondary {
         text-align: right;
     }
-    
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -173,6 +206,25 @@ footer p a {
     .col {
         flex: 1 50%;
     }
+    
+    /* Skills Page */
+    .flex-container-4 {
+        display: flex;
+        flex-direction: row;
+    }
+    .col-4 {
+        flex: 1 33%;
+    }   
+    .row-3 {
+        margin: 100px auto 70px;
+    }
+
+
+    /* Contact Page */
+    .row-4 {
+        margin: 140px auto;
+    }
+    
     
     
 
