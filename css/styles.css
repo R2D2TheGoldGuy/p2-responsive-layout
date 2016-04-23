@@ -27,7 +27,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
 }
 img {
     max-width: 100%;
@@ -43,7 +42,7 @@ img {
 }
 
 /* ---- Mobile First Approach ---- */
-       
+
 /* Background Colors */
 .background-1 {
     background: #173e43;
@@ -62,7 +61,7 @@ img {
 }
 
 /* Mobile Nav */
-.top-heading {    
+.top-heading {
     padding: 1em 0;
 }
 .bottom-heading {
@@ -79,14 +78,13 @@ img {
     font-weight: 700;
     font-size: .875em;
 }
-.main-nav li {   
+.main-nav li {
     padding: 10px 0;
 }
 .main-nav a {
     display: block;
     padding: .25em;
 }
-
 
 /* Home Page */
 .flex-container-2 {
@@ -96,19 +94,12 @@ img {
     margin: 2.5em auto;
 }
 
-
 /* Portfolio Page */
 .flex-container-3 {
     margin: 70px auto 0;
 }
 .margin-top {
     margin: 40px 0;
-}
-img {
-    transition: all 1s;
-}
-img:hover {
-    transform: scale(1) rotate(360deg);
 }
 
 
@@ -117,19 +108,16 @@ img:hover {
      margin: 70px auto 0;
 }
 
-
-
 /* Contact Page */
 .row-4 {
     margin: 120px auto;
 }
 
-
 /* Special Footer with Generated Content */
 .background-6 {
     padding: 20px 0;
     background: #173e43;
-}   
+}
 footer p::before {
     content: "Student Name";
     color: #3fb0ac;
@@ -146,10 +134,8 @@ footer p a {
     display: none;
 }
 
-
-
 @media (min-width: 768px) {
-    
+
     ul {
         font-size: .95em;
     }
@@ -160,37 +146,33 @@ footer p a {
     .footer-nav {
         display: flex;
         flex-direction: column;
-    }    
+    }
     .main-nav { /* Tablet Navigation */
         flex-direction: row;
-        justify-content: space-around;       
-        margin-top: auto;       
+        justify-content: space-around;
+        margin-top: auto;
     }
     .main-nav a {
-        padding: 0 .75em;        
+        padding: 0 .75em;
     }
-    
-    
-    
+
     .bottom-heading { /* Centered Top Heading */
         text-align: center;
         margin-right: auto;
     }
 
-    .top-heading {    
-        margin: auto 0;       
-    }  
-  
- 
+    .top-heading {
+        margin: auto 0;
+    }
+
     .footer-header {
         flex-direction: row;
         align-self: center;
-    }       
+    }
     footer p {
         display: none;
     }
-    
-    
+
     .flex-container-2 {
         display: flex;
         flex-direction: row;
@@ -206,7 +188,7 @@ footer p a {
     .col {
         flex: 1 50%;
     }
-    
+
     /* Skills Page */
     .flex-container-4 {
         display: flex;
@@ -214,24 +196,19 @@ footer p a {
     }
     .col-4 {
         flex: 1 33%;
-    }   
+    }
     .row-3 {
         margin: 100px auto 70px;
     }
-
 
     /* Contact Page */
     .row-4 {
         margin: 140px auto;
     }
-    
-    
-    
-
 }
 
 @media (min-width: 1024px) {
-    
+
     /* Desktop Nav - Using Flexbox */
     .main-header,
     .footer-header {
@@ -240,19 +217,16 @@ footer p a {
     .top-heading { /* Desktop Top Heading */
         margin: auto auto auto 0;
     }
-    
+
     .main-nav a {
         padding: .5em 1.5em;
     }
-    
+
     .row {
         display: flex;
         flex-wrap: wrap;
     }
     .col {
-        flex: 1 33%; /* 33% for 3 column layout */
+        flex: 1 33.33%; /* 33% for 3 column layout */
     }
-    
-    
-    
 }
