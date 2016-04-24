@@ -134,7 +134,7 @@ footer p a {
     display: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     ul {
         font-size: .95em;
@@ -207,7 +207,7 @@ footer p a {
     }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
     /* Desktop Nav - Using Flexbox */
     .main-header,
